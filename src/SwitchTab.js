@@ -4,6 +4,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 
+import Birthday from './Birthday/BirthdayMainComponent'
+import Babies from './Babies/BabiesMainComponent'
+import Anniversaries from './Anniversaries/AnniversaryMainComponent'
+import Scroll from './Scroll';
+
 const SwitchTab = () => {
 
 return(
@@ -26,13 +31,25 @@ return(
     <Col sm={9}>
       <Tab.Content>
         <Tab.Pane eventKey="first">
-          <h1>Sumit Shinde</h1>
+          {/* <h1> Sumit Shinde </h1> */}
+          <Scroll>
+          <h1> Birthday </h1>    
+          <Birthday/>
+          </Scroll>
         </Tab.Pane>
         <Tab.Pane eventKey="second">
-          <h2>Sumit Shinde  </h2>
+          {/* <h2> Sumit Shinde  </h2> */}
+          <Scroll>
+          <h1> Anniversary </h1>
+          <Anniversaries/>
+          </Scroll>
           </Tab.Pane>
           <Tab.Pane eventKey = "third">
-              <h3>Rohit Sigar</h3>
+              {/* <h3> Rohit Sigar </h3> */}
+              <Scroll>
+              <h1> Babies </h1>
+              <Babies/>
+              </Scroll>
           </Tab.Pane>
       </Tab.Content>
     </Col>

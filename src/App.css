@@ -6,6 +6,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+}
+.CardInput {
+	text-align: start;
 }
 
 .Scrolls {
