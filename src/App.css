@@ -1,11 +1,12 @@
 .App {
 	text-align: center;
+	background-color: #f0f2f5;
 }
 
 .App {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
 }
 .CardInput {

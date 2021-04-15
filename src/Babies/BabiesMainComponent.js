@@ -5,7 +5,12 @@ import { babies } from './babies'
 const Babies = () => {
     return (
         <div>
-            <div>
+            <div
+            style={{
+                backgroundColor:'white',
+                overflow : 'hidden',
+                borderRadius:'25px'
+            }}>
             <CardList babies={babies} className="CardList"/>
             </div>
         </div>

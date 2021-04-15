@@ -5,7 +5,11 @@ import { anniversaries } from './anniversaries'
 const Anniversaries = () => {
     return (
         <div>
-            <div>
+            <div style={{
+                backgroundColor:'white',
+                overflow : 'hidden',
+                borderRadius:'25px'
+            }}>
             <CardList anniversaries={anniversaries} className="CardList"/>
             </div>
         </div>

@@ -1,0 +1,32 @@
+.OuterComponent {
+	margin: 2rem;
+	/* border: solid 0.005px black; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	background-color: white;
+	box-shadow: thistle;
+}
+
+.InnerComponent {
+	width: 25rem;
+	display: flex;
+	align-items: center;
+	background-color: white;
+
+	justify-content: space-evenly;
+	margin: 2rem;
+	/* box-shadow: thistle; */
+}
+.Button {
+	display: flex;
+	/* float: center; */
+}
+.UpperText {
+	border-radius: 50px;
+}
+
+.LowerText {
+	border-radius: 25px;
+}
