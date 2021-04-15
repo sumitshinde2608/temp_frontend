@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 
 const CardInput = () => {
@@ -18,6 +19,7 @@ return (
   <Form.Group>
   <Form.File controlId="exampleForm.ControlInputArea1" label="Photo"/>
   </Form.Group>
+  <Button as="input" type="submit" value="Post" variant="success"/>
 
   </Form>
   </div>

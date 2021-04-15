@@ -4,10 +4,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 
-import Birthday from './Birthday/BirthdayMainComponent'
-import Babies from './Babies/BabiesMainComponent'
-import Anniversaries from './Anniversaries/AnniversaryMainComponent'
-import Scroll from './Scroll';
+import Birthday from '../../Birthday/BirthdayMainComponent'
+import Babies from '../../Babies/BabiesMainComponent'
+import Anniversaries from '../../Anniversaries/AnniversaryMainComponent'
+import Scroll from '../Scroll/Scroll';
+import CardInput from '../CardInput/CardInput'
 
 const SwitchTab = () => {
 
@@ -38,14 +39,19 @@ return(
           </Scroll>
         </Tab.Pane>
         <Tab.Pane eventKey="second">
-          {/* <h2> Sumit Shinde  </h2> */}
+            <div className="CardInput">
+          <CardInput/>
+          </div>
           <Scroll>
           <h1> Anniversary </h1>
           <Anniversaries/>
           </Scroll>
           </Tab.Pane>
-          <Tab.Pane eventKey = "third">
-              {/* <h3> Rohit Sigar </h3> */}
+          <Tab.Pane eventKey = "third">                 
+              <div className="CardInput">
+                <CardInput/>
+              </div>        
+          
               <Scroll>
               <h1> Babies </h1>
               <Babies/>
