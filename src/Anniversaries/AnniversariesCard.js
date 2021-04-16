@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
      return(
         <div>
     <Card 
-    style={{ width: '25rem', margin : '3rem'}}>
+    style={{ width: '500px', margin : '50px'}}>
   <Card.Img variant="top" src="https://picsum.photos/100" />
   <Card.Body>
     <Card.Title>{name}</Card.Title>

@@ -8,17 +8,18 @@ import Birthday from '../../Birthday/BirthdayMainComponent'
 import Babies from '../../Babies/BabiesMainComponent'
 import Anniversaries from '../../Anniversaries/AnniversaryMainComponent'
 import CardInput from '../CardInput/CardInput'
+import './SwitchTab.css'
 
 const SwitchTab = () => {
 
 return(
-<div>
+<div className="MainUI"> 
 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-  <Row>
-    <Col sm={3}>
+
+    <div className="LeftNav">
       <Nav variant="pills" className="flex-column">
-        <Nav.Item>
-          <Nav.Link eventKey="first">Birthday</Nav.Link>
+        <Nav.Item variant = "success">
+          <Nav.Link eventKey="first" variant="success">Birthday</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="second">Anniversary</Nav.Link>
@@ -27,29 +28,36 @@ return(
           <Nav.Link eventKey="third">Babies</Nav.Link>
         </Nav.Item>
       </Nav>
-    </Col>
-    <Col sm={9}>
-      <Tab.Content>
+    </div>
+
+    <div className="MainFrame">
+    
+      <Tab.Content id="MainFrame2">
         <Tab.Pane eventKey="first">
-          {/* <Scroll> */}
-          <Birthday/>
-          {/* </Scroll> */}
-        </Tab.Pane>
+         <div className="Card">
+          <Birthday />
+        </div>
+        </Tab.Pane >
         <Tab.Pane eventKey="second">
             <div className="CardInput">
           <CardInput/>
           </div>
+          <div className="Card">
           <Anniversaries/>
+          </div>
           </Tab.Pane>
           <Tab.Pane eventKey = "third">                 
               <div className="CardInput">
                 <CardInput/>
               </div>        
+              <div className="Card">
               <Babies/>
+              </div>
           </Tab.Pane>
       </Tab.Content>
-    </Col>
-  </Row>
+  
+    </div>
+
 </Tab.Container>
 </div>
 );

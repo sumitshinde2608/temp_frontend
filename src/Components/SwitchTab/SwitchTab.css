@@ -1,0 +1,33 @@
+.LeftNav {
+	height: 100vh;
+	width: 20vw;
+	/* display: flex; */
+	/* position: fixed; */
+	/* align-self: flex-start; */
+}
+
+#MainFrame2 {
+	width: 55vw;
+	/* display: flex; */
+	justify-content: space-around;
+	align-self: center;
+}
+
+.MainUI {
+	display: flex;
+	/* flex-direction: row; */
+	width: 100vw;
+	justify-items: center;
+}
+
+.Card {
+	display: flex;
+	justify-content: center;
+	width: 55vw;
+}
+
+.CardInput {
+	display: flex;
+	/* width: 500px; */
+	justify-content: center;
+}

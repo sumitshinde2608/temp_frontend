@@ -1,6 +1,7 @@
 .OuterComponent {
 	margin: 2rem;
 	/* border: solid 0.005px black; */
+	width: 600px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -10,12 +11,13 @@
 }
 
 .InnerComponent {
-	width: 25rem;
+	/* width: 500px; */
 	display: flex;
 	align-items: center;
+	justify-self: center;
 	background-color: white;
 
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	margin: 2rem;
 	/* box-shadow: thistle; */
 }
