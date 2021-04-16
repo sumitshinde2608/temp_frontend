@@ -21,11 +21,14 @@ return (
   <Form.Group custom>
   <Form.File controlId="exampleForm.ControlInputArea1" label="Photo"/>
   </Form.Group>
-  <Button type="submit" variant="success" className = "Button" block>
+  
+  </Form>
+  <Button type="submit" variant="success" className = "Button">
+    <div className="Btext">
     Add +
+    </div>
     </Button> 
 
-  </Form>
   </div>
   </div>
 );

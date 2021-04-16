@@ -1,7 +1,6 @@
 import React from "react"
 import Tab from 'react-bootstrap/Tab'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
 import Nav from 'react-bootstrap/Nav'
 
 import Birthday from '../../Birthday/BirthdayMainComponent'
@@ -59,7 +58,23 @@ return(
     </div>
 
 </Tab.Container>
+
+<div className="RightNav">
+      <Nav variant="pills" className="flex-column">
+        <Nav.Item>
+          <Nav.Link eventKey="second">Result</Nav.Link>
+        </Nav.Item>
+        <Nav.Item variant = "success">
+          <Nav.Link href="" variant="success">My Account</Nav.Link>
+        </Nav.Item>
+        
+        <Nav.Item>
+          <Nav.Link eventKey="third">Logout</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </div>
 </div>
+
 );
 
 }

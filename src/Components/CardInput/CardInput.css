@@ -16,6 +16,7 @@
 	align-items: center;
 	justify-self: center;
 	background-color: white;
+	flex-direction: column;
 
 	/* justify-content: space-evenly; */
 	margin: 2rem;
@@ -23,7 +24,9 @@
 }
 .Button {
 	display: flex;
-	/* float: center; */
+	text-justify: center;
+	justify-self: center;
+	text-align: center;
 }
 .UpperText {
 	border-radius: 50px;
